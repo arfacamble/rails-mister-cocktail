@@ -1,0 +1,13 @@
+<div class="container">
+  <h1><%= @cocktail.name %></h1>
+  <img src="https://source.unsplash.com/featured/?cocktail" alt="cocktail photo" class="show-page-image">
+  <%= link_to "New Ingredient", new_cocktail_dose_path(@cocktail), class: "btn btn-primary" %>
+  <div class="new-dose">
+    <h3>New Ingredient</h3>
+    <%= simple_form_for [@cocktail, @dose] do |f| %>
+      <%= f.association :ingredient %>
+      <%= f.input :description %>
+    <% end %>
+  </div>
+
+</div>
