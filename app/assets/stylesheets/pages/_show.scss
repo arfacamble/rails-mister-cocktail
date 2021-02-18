@@ -1,5 +1,51 @@
+.show-container {
+  margin-top: -70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 .show-page-image {
-  max-height: 300px;
+  height: 500px;
+  width: 400px;
+  object-fit: cover;
+  object-position: center;
+  margin-right: 24px;
+}
+
+.cocktail-details {
+  margin-top: 100px;
+  flex-grow: 1;
+  width: 500px;
+}
+
+.paper {
+  background-image: asset-url('notebook-paper');
+  background-size: 100% auto;
+  min-height: 350px;
+  margin-left: -50px;
+  margin-top: -50px;
+  position: relative;
+}
+
+.ingredients {
+  position: absolute;
+  top: 60px;
+  left: 110px;
+  h3 {
+    margin-top: 20px;
+    font-size: 1em;
+  }
+  p {
+    margin-bottom: 0.3rem;
+    letter-spacing: 0.2rem;
+  }
+  .description {
+    font-style: italic;
+  }
+  i {
+    color: $dark-gray;
+  }
 }
 
 .new-dose {

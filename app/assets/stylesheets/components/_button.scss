@@ -1,0 +1,13 @@
+.button-new {
+  border: 1px solid $dark-gray;
+  color: $dark-gray;
+  padding: 8px 16px;
+  border-radius: 3px;
+  letter-spacing: 0.2rem;
+  transition: box-shadow 1s;
+  &:hover {
+    text-decoration: none;
+    color: $dark-gray;
+    box-shadow: 0 0 15px $gray;
+  }
+}

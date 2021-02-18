@@ -7,10 +7,7 @@ class CocktailsController < ApplicationController
 
   def show
     @dose = Dose.new
-    @doses = @cocktail.doses.map do |dose|
-      ingredient = Ingredient.find(dose.ingredient_id)
-      { ingredient: ingredient.name, description: dose.description, dose: dose}
-    end
+    @doses = @cocktail.doses
   end
 
   def new

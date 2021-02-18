@@ -10,3 +10,10 @@
     font-size: 4rem;
   }
 }
+
+.show-banner {
+  height: 350px;
+  background-image: asset-url('bottles');
+  background-position: 50% 25%;
+  background-size: cover;
+}
