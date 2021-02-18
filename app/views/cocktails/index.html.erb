@@ -1,6 +1,10 @@
+<div class="index-banner">
+  <div style="width: 50%">
+    <h1>Cocktails</h1>
+  </div>
+</div>
 <div class="container">
-  <h1 class="mt-5 text-center">Cocktails</h1>
-  <div class="cocktail-cards mt-3">
+  <div class="cocktail-cards">
     <% @cocktails.each do |cocktail| %>
       <%= link_to cocktail_path(cocktail) do %>
       <div class="cocktail-index-card bg-dark text-white">

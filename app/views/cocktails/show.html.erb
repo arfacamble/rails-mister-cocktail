@@ -1,13 +1,22 @@
 <div class="container">
   <h1><%= @cocktail.name %></h1>
   <img src="https://source.unsplash.com/featured/?cocktail" alt="cocktail photo" class="show-page-image">
-  <%= link_to "New Ingredient", new_cocktail_dose_path(@cocktail), class: "btn btn-primary" %>
+  <div class="ingredients">
+    <h3>Ingredients</h3>
+    <% @doses.each do |dose| %>
+      <p><bold><%= dose[:ingredient] %></bold> - <%= dose[:description] %>
+        <%= link_to dose_path(dose[:dose]), method: :delete, data: { confirm: "Are you sure?" } do %>
+        <i class="fas fa-minus-circle"></i>
+        <% end %>
+      </p>
+    <% end %>
+  </div>
   <div class="new-dose">
     <h3>New Ingredient</h3>
     <%= simple_form_for [@cocktail, @dose] do |f| %>
       <%= f.association :ingredient %>
       <%= f.input :description %>
+      <%= f.button :submit, class: "btn btn-primary", value: "Add Ingredient" %>
     <% end %>
   </div>
-
 </div>

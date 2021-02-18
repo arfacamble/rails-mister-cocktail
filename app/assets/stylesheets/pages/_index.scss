@@ -1,2 +1,8 @@
 // Import page-specific CSS files here.
-@import "home";
+
+.cocktail-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: -100px;
+}
