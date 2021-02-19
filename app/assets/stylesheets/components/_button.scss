@@ -1,13 +1,14 @@
 .button-new {
+  font-family: $link-font;
   border: 1px solid $dark-gray;
-  color: $dark-gray;
+  color: black;
   padding: 8px 16px;
   border-radius: 3px;
   letter-spacing: 0.2rem;
-  transition: box-shadow 1s;
+  transition: 1s;
   &:hover {
     text-decoration: none;
     color: $dark-gray;
-    box-shadow: 0 0 15px $gray;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
   }
 }
