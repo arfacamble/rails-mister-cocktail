@@ -14,30 +14,35 @@
 }
 
 .cocktail-details {
-  margin-top: 100px;
-  flex-grow: 1;
+  margin-top: 160px;
   width: 500px;
 }
 
 .paper {
   background-image: asset-url('notebook-paper');
   background-size: 100% auto;
+  width: 500px;
   min-height: 350px;
   margin-left: -50px;
   margin-top: -50px;
   position: relative;
+  h1 {
+    position: absolute;
+    top: -20px;
+    left: 45px;
+  }
 }
 
 .ingredients {
   position: absolute;
-  top: 60px;
-  left: 110px;
+  top: 50px;
+  left: 102px;
   h3 {
     margin-top: 20px;
     font-size: 1em;
   }
   p {
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.16rem;
     letter-spacing: 0.2rem;
   }
   .description {
