@@ -18,3 +18,10 @@ url = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list'
 JSON.parse(open(url).read)['drinks'].each do |ing|
   Ingredient.create!(name: ing['strIngredient1'])
 end
+
+puts 'seeding cocktails'
+Cocktail.create!(name: 'White Russian')
+Cocktail.create!(name: 'Old Fashioned')
+Cocktail.create!(name: 'Dirty Martini')
+Cocktail.create!(name: 'Long Island Ice Tea')
+Cocktail.create!(name: 'Pint of')
