@@ -1,12 +1,13 @@
 .cocktail-index-card {
   margin: 16px;
-  height: 200px;
-  width: 360px;
-  border-radius: 3px;
+  border-radius: 20px;
   position: relative;
-  div {
+  h5 {
     position: absolute;
-    bottom: 8px;
-    left: 8px;
+    text-decoration: none;
+    top: 16px;
+    left: 16px;
+    color: black;
+    text-shadow: 0 0 5px white;
   }
 }

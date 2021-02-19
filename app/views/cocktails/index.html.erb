@@ -7,13 +7,10 @@
   <div class="cocktail-cards">
     <% @cocktails.each do |cocktail| %>
       <%= link_to cocktail_path(cocktail) do %>
-      <div class="cocktail-index-card bg-dark text-white">
-        <img class="card-img" src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="Cocktail photo">
-        <div class="card-img-overlay">
+        <div class="cocktail-index-card">
+          <%= cl_image_tag cocktail.photo.key, width: 240, height: 320, crop: :fill %>
           <h5 class="card-title"><%= cocktail.name %></h5>
-          <p class="card-text">Todo: an each loop on ingredients</p>
         </div>
-      </div>
       <% end %>
     <% end %>
   </div>
