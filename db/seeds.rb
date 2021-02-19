@@ -31,6 +31,11 @@ martini_img = URI.open('https://i.pinimg.com/originals/ee/65/7f/ee657f437fac97ab
 martini.photo.attach(io: martini_img, filename: 'martini.jpg', content_type: 'image/png')
 martini.save
 
+pint = Cocktail.new(name: 'Pint')
+pint_img = URI.open('https://i2-prod.dailyrecord.co.uk/incoming/article6689127.ece/ALTERNATES/s1200/unnamed.jpg')
+pint.photo.attach(io: pint_img, filename: 'pint.jpg', content_type: 'image/png')
+pint.save
+
 french_75 = Cocktail.new(name: 'French 75')
 french_75_img = URI.open('https://i0.wp.com/boingboing.net/wp-content/uploads/2019/01/Casablanca-review.jpg?fit=792%2C456&ssl=1')
 french_75.photo.attach(io: french_75_img, filename: 'french_75.jpg', content_type: 'image/png')
@@ -45,9 +50,3 @@ suntory = Cocktail.new(name: 'Suntory Whiskey')
 suntory_img = URI.open('https://i.insider.com/520532a069beddc374000011?width=700&format=jpeg&auto=webp')
 suntory.photo.attach(io: suntory_img, filename: 'suntory.jpg', content_type: 'image/png')
 suntory.save
-
-# Cocktail.create!(name: 'Old Fashioned')
-# Cocktail.create!(name: 'Dirty Martini')
-# Cocktail.create!(name: 'Long Island Ice Tea')
-# Cocktail.create!(name: 'Pint of')
-
