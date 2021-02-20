@@ -1,4 +1,5 @@
 .button-new {
+  background-color: rgba(255, 255, 255, 0.3);
   font-family: $link-font;
   border: 1px solid $dark-gray;
   color: black;
@@ -6,9 +7,12 @@
   border-radius: 3px;
   letter-spacing: 0.2rem;
   transition: 1s;
+  font-weight: lighter;
   &:hover {
+    background-color: white;
     text-decoration: none;
-    color: $dark-gray;
+    background-color: transparent;
+    color: black;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
   }
 }
