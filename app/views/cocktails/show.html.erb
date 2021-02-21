@@ -1,6 +1,8 @@
 <div class="show-banner" style="background-image: url('<%= cl_image_path("rwv8cocze07ltk2eztx6") %>')"></div>
 <div class="container show-container">
-  <%= cl_image_tag @cocktail.photo.key, class: "show-page-image" %>
+  <% if @cocktail.photo.attached? %>
+    <%= cl_image_tag @cocktail.photo.key, class: "show-page-image" %>
+  <% end %>
   <div class="cocktail-details">
     <div class="paper" style="background-image: url('<%= cl_image_path("ej7tod429pkvgoogkt8q") %>')">
       <h1><%= @cocktail.name %></h1>
