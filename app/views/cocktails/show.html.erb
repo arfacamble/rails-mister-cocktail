@@ -17,12 +17,18 @@
       </div>
     </div>
     <div class="new-dose-form">
-      <h3>New Ingredient</h3>
-      <%= simple_form_for [@cocktail, @dose] do |f| %>
-        <%= f.association :ingredient %>
-        <%= f.input :description %>
-        <%= f.button :submit, class: "btn btn-primary", value: "Add Ingredient" %>
-      <% end %>
+      <div class="form-click">
+        <h3>New Ingredient</h3>
+        <i class="fas fa-caret-up" style='display: none'></i>
+        <i class="fas fa-caret-down"></i>
+      </div>
+      <div class="dose-form">
+        <%= simple_form_for [@cocktail, @dose] do |f| %>
+          <%= f.association :ingredient %>
+          <%= f.input :description %>
+          <%= f.button :submit, class: "btn btn-primary", value: "Add Ingredient" %>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>

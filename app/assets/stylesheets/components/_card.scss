@@ -14,4 +14,27 @@
 
 .new-dose-form {
   width: 300px;
+  margin-left: 50px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 8px;
+  margin-top: 8px;
+  .dose-form {
+    display: none;
+  }
+}
+
+.visible {
+  display: block !important;
+}
+
+.form-click {
+  display: flex;
+  padding: 8px 16px;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+  h3 {
+    font-size: 1.3rem;
+  }
 }
